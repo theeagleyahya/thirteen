@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+    min-height: 800px;
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+   background-color: hsl(257, 40%, 49%);
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-top: 80px;
+}
+
+#logo {
+    display: block;
+    margin-bottom: 67px;
+    margin-top: -20px;
+}
+
+#mockup {
+    float: left;
+    margin-right: 55px;
+}
+
+#sec1 {
+    display: inline-block;
+    width: 500px;
+    float: right;
+}
+
+#sec1 > h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin: revert;
+}
+
+#sec1 > p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: revert;
+}
+
+#sec1 > a{
+    background-color: white;
+    color: hsl(257, 40%, 49%);;
+    font-family: 'Poppins', sans-serif;
+    width: 200px;
+    height: 55px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 55px;
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: 2px 5px 10px -2px black;
+}
+
+#sec1 > a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+#svgs{
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+}
+
+.svg{
+    width: 40px; height: 40px;
+    border: 2px solid white;
+    padding: 8px;
+    fill: white;
+    border-radius: 50%;
+}
+
+.svg:hover{
+    fill: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 375px) {
+    body{
+        width: 100vw;
+        padding-left: 30px;
+        background-image: url(images/bg-mobile.svg);
+        padding-right: 30px;
+        padding-top: 30px;
+        min-height: 800px;
+    }
+
+    #logo {
+        display: block;
+        margin-bottom: 53px;
+        margin-top: 0;
+        width: 100px;
+    }
+    
+
+    #mockup {
+        float: none;
+        display: block;
+        margin-right: 0;
+        width: 100%;
+        
+    }
+
+    #sec1 {
+        display: flow-root;
+        width: 100%;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    #sec1 > h1 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #sec1 > p {
+       text-align: center;
+       font-size: 15.2px;
+    }
+
+    #sec1 > a{
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 200px;
+        margin-top: 10px;
+        height: 45px;
+        line-height: 45px;
+        box-shadow: none;
+    }
+
+    #svgs{
+        width: 155px;
+        display: flex;
+        justify-content: space-between;
+        position: static;
+        margin-top: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+    }
+
+}
+
+
